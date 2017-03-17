@@ -9,3 +9,34 @@ Text Domain: ppamplona
 */
 
 @import url("../Avada/style.css");
+
+.hide-text {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.aligntop {
+	vertical-align: top;
+}
+
+/* FULL PAGE TEMPLATE */
+.fp-tableCell {
+	vertical-align: bottom;
+	background-color: rgba(66,181,166,0.5);
+}
+.fp-slide {
+	background-size: cover;
+}
+.fp-slide-desc {
+	margin-top: 10px;
+	text-align: center;
+	color: #fff;
+}
+.hidden {
+	display:none;
+}
+
+/* NEWSLETTER SUSCRIPTION FORM */
+.tnp-submit {
+	width: 100% !important;
+}
