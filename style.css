@@ -21,6 +21,14 @@ Text Domain: ppamplona
 figure {
 	margin: 0 0 1em 0;
 }
+.list-inline {
+	margin: 0;
+	padding: 0;
+}
+.list-inline > li {
+	display: inline-block;
+	padding: 0 5px 5px 0;
+}
 
 /* FULL PAGE TEMPLATE */
 .fp-tableCell {
@@ -93,3 +101,85 @@ figure {
 	font-weight: bold;
 }
 
+/* MOSAIC OF SPACES TEMPLATE */
+.space,
+.space-filters,
+.space-tab-active {
+	background-color: #ececec;
+}
+.space-tab-inactive {
+	color: #999;
+}
+.space-tab  {
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: normal !important;
+	padding: 15px;
+	display: inline-block;
+	margin: 0;
+}
+.space-item {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.space-pre {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 2px 5px;
+}
+.space-text {
+	padding: 0 5px 5px 5px;
+}
+.space-inner {
+	background-color: #fff;
+	padding: 5px;
+	height: 170px;
+	width: 100%;
+	display: table;
+}
+.space-heading {
+	display: table-row;
+}
+.space-tit {
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 1.1em;
+}
+.space-terms {
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 1.4em;
+	display: table-cell;
+	vertical-align: bottom;
+}
+
+
+/* Mosaic filters */
+.space-filters {
+	padding: 30px 0;
+}
+.space-filter-tit {
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+.space-filter li a {
+	padding: 2px 5px;
+	display: inline-block;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.space-filter-area li a,
+.space-filter-neighbourhood li a {
+	background-color: #999;
+}
+.space-filter-area li a:hover,
+.space-filter-neighbourhood li a:hover {
+	background-color: #333;
+}
+.space-filter-type li a:hover {
+	opacity: 0.8;
+}

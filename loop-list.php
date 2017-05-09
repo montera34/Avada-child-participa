@@ -20,12 +20,13 @@ $loop_perma = get_permalink();
 if ( has_post_thumbnail() ) {
 	$loop_featured = "<a href=" .$loop_perma. ">" .get_the_post_thumbnail($post->ID,$img_size,array('class' => 'img-responsive')). "</a>";
 } else { $loop_featured = ""; }
+
 $loop_desc = pparticipa_custom_excerpt($excerpt_words);
 $loop_tit = get_the_title();
 $loop_date = get_the_time('d\/m\/Y');
 ?>
 
-	<article class="<?php echo $item_classes; ?>">
+<article class="<?php echo $item_classes; ?>">
 	<figure class="<?php echo $loop; ?>-img">
 		<?php echo $loop_featured ?>
 	</figure>
