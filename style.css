@@ -18,6 +18,9 @@ Text Domain: ppamplona
 .aligntop {
 	vertical-align: top;
 }
+figure {
+	margin: 0 0 1em 0;
+}
 
 /* FULL PAGE TEMPLATE */
 .fp-tableCell {
@@ -40,3 +43,53 @@ Text Domain: ppamplona
 .tnp-submit {
 	width: 100% !important;
 }
+
+/* LIST OF ITEMS TEMPLATE */
+.featured-item,
+.mosaic-item,
+.list-item {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 10px 0;
+}
+.featured-item:hover,
+.featured-item:hover .featured-tit,
+.mosaic-item:hover,
+.mosaic-item:hover .mosaic-tit,
+.list-item:hover,
+.list-item:hover .list-tit {
+	background-color: rgba(66,181,166,1);
+	color: #fff;
+}
+.list-tit,
+.mosaic-tit,
+.featured-tit {
+	margin-bottom: 10px;
+	line-height: 1.1em;
+/*	font-weight: normal !important;*/
+	color: #333;
+}
+.mosaic-tit {
+	font-size: 21px;
+}
+.list-tit {
+	font-size: 18px;
+}
+.mosaic-img,
+.featured-img {
+	max-height: 200px;
+	overflow: hidden;
+}
+.list-img {
+	margin-bottom: 0;
+	float: left;
+}
+.list-text {
+	padding-left: 176px;
+}
+.list-date,
+.mosaic-date,
+.featured-date {
+	font-weight: bold;
+}
+
