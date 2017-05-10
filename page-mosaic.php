@@ -18,11 +18,11 @@ if ( $items->have_posts() ) :
 	$filters = array(
 		'type' => array(
 			'name' => 'Tipos',
-			'cols' => '3'
+			'cols' => '2'
 		),
 		'area' => array(
 			'name' => 'Áreas',
-			'cols' => '5'
+			'cols' => '6'
 		),
 		'neighbourhood' => array(
 			'name' => 'Barrios',
@@ -35,13 +35,13 @@ if ( $items->have_posts() ) :
 		);
 		$termes = get_terms($args); print_r($terms);
 		if ( !is_wp_error($termes) ) {
-			$terms_out = '<div class="col-md-'.$d['cols'].'"><div class="space-filter-tit">'.$d['name'].'</div><ul class="space-filter space-filter-'.$f.' list-inline">';
+			$terms_out = '<div class="col-md-'.$d['cols'].'"><div class="space-filter-tit">'.$d['name'].'</div><ul class="space-filter space-filter-'.$f.' list-inline"><li><a data-filter="*" href="#">Todos</a></li>';
 			foreach ( $termes as $t ) {
 				if ( $f == 'type') {
 					$term_color = get_term_meta($t->term_id,"_participa_type_color",true);
 					$term_style = ' style="background-color: '.$term_color.'"';
 				} else { $term_style = ''; }
-				$terms_out .= '<li><a'.$term_style.' href="">'.$t->name.'</a></li>';
+				$terms_out .= '<li><a '.$term_style.' data-filter=".'.$t->slug.'" href="#">'.$t->name.'</a></li>';
 				
 			}
 			$terms_out .= '</ul></div>';

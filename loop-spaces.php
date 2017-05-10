@@ -12,6 +12,7 @@ if ( $types == false ) { $loop_color = "#5c5c5c";  } else {
 		//$t_perma = get_term_link($term);
 		$loop_color = get_term_meta($t->term_id,"_participa_type_color",true);
 		if ( $loop_color == '' ) { $loop_color = "#5c5c5c"; }
+		$item_classes .= ' '.$t->slug;
 	}
 }
 $neighbourhoods = get_the_terms($post->ID,'neighbourhood');
@@ -19,6 +20,7 @@ if ( $neighbourhoods == false ) { $loop_neighbourhood_out = "";  } else {
 	foreach ( $neighbourhoods as $t ) {
 		$neighbourhoods_list[] = $t->name;
 		//$t_perma = get_term_link($term);
+		$item_classes .= ' '.$t->slug;
 	}
 	$loop_neighbourhood_out = '<div class="space-terms space-neighbourhood">Foros de barrio</div>';
 }
@@ -27,6 +29,7 @@ if ( $areas == false ) { $loop_area_out = "";  } else {
 	foreach ( $areas as $t ) {
 		$areas_list[] = $t->name;
 		//$t_perma = get_term_link($term);
+		$item_classes .= ' '.$t->slug;
 	}
 	$loop_area_out = '<div class="space-terms space-areas">'.implode( ', ',$areas_list ).'</div>';
 }

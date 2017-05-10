@@ -162,7 +162,6 @@ figure {
 }
 .space-filter-tit {
 	text-transform: uppercase;
-	margin-bottom: 15px;
 }
 .space-filter li a {
 	padding: 2px 5px;
@@ -172,6 +171,13 @@ figure {
 	font-weight: bold;
 	text-transform: uppercase;
 }
+.space-filter li:first-child a {
+	background-color: #333 !important;
+}
+.space-filter li:first-child a:hover {
+	background-color: #000;
+}
+
 .space-filter-area li a,
 .space-filter-neighbourhood li a {
 	background-color: #999;
@@ -182,4 +188,7 @@ figure {
 }
 .space-filter-type li a:hover {
 	opacity: 0.8;
+}
+.filter-active {
+	background-color: #42b5a6 !important;
 }
