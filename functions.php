@@ -42,7 +42,7 @@ function pparticipa_scripts() {
 		wp_enqueue_script( 'fullpage-js', get_stylesheet_directory_uri() . '/fullpagejs/jquery.fullPage.min.js', array('jquery'), '2.8.6', true );
 		wp_enqueue_script( 'page-fullpage-js', get_stylesheet_directory_uri() . '/js/page-fullpage.js', array('fullpage-js'), '0.1', true );
 	}
-	if ( is_page_template('page-mosaic.php') ) {
+	if ( is_page_template('page-mosaic.php') || is_page_template('page-home.php') ) {
 		wp_enqueue_script( 'isotope-js', get_stylesheet_directory_uri() . '/js/isotope.pkgd.min.js', array('jquery'), '3.0.4', true );
 		wp_enqueue_script( 'page-mosaic-js', get_stylesheet_directory_uri() . '/js/page-mosaic.js', array('isotope-js'), '0.1', true );
 	}

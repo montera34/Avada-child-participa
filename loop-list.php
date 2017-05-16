@@ -13,7 +13,12 @@ if ( $loop == 'list' ) {
 	$img_size = 'medium';
 	$excerpt_words = 60;
 	$item_classes = 'featured-item col-md-12';
+} elseif ( $loop == 'home' ) {
+	$img_size = 'small';
+	$excerpt_words = 15;
+	$item_classes = 'home-item col-md-4';
 }
+
 
 // common vars
 $loop_perma = get_permalink();

@@ -29,6 +29,12 @@ figure {
 	display: inline-block;
 	padding: 0 5px 5px 0;
 }
+.pparticipa-tooltip:hover::after {
+	background-color: #ff0;
+	color: #333;
+	margin-left: 10px;
+	padding: 5px;
+}
 
 /* AVADA STYLES REDEFINITION */
 .fusion-page-title-bar h1 {text-transform: uppercase}
@@ -64,12 +70,44 @@ figure {
 	display:none;
 }
 
+/* HOME PAGE TEMPLATE */
+.home-block {
+	padding-top: 100px;
+}
+.home-block-tit {
+	background-color: #42b5a6;
+	color: #fff;
+}
+.home-block-plus {
+	text-align: right;
+}
+.home-block-plus a {
+	text-transform: uppercase;
+	padding: 2px 5px;
+}
+.home-block-plus a:hover {
+	color: #fff;
+	background-color: #42b5a6;
+}
+.pparticipa-fullscreen-img-fg {
+	width: auto !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+.home .fusion-button {
+	background-color: rgba(66,181,166,0.5) !important;
+}
+.home .fusion-button:hover {
+	background-color: #42b5a6 !important;
+}
+
 /* NEWSLETTER SUSCRIPTION FORM */
 .tnp-submit {
 	width: 100% !important;
 }
 
 /* LIST OF ITEMS TEMPLATE */
+.home-item,
 .featured-item,
 .mosaic-item,
 .list-item {
@@ -77,6 +115,8 @@ figure {
 	padding-bottom: 20px;
 	margin: 10px 0;
 }
+.home-item:hover,
+.home-item:hover .home-tit,
 .featured-item:hover,
 .featured-item:hover .featured-tit,
 .mosaic-item:hover,
@@ -86,6 +126,7 @@ figure {
 	background-color: rgba(66,181,166,1);
 	color: #fff;
 }
+.home-tit,
 .list-tit,
 .mosaic-tit,
 .featured-tit {
@@ -97,9 +138,11 @@ figure {
 .mosaic-tit {
 	font-size: 21px;
 }
+.home-tit,
 .list-tit {
 	font-size: 18px;
 }
+.home-img,
 .mosaic-img,
 .featured-img {
 	max-height: 200px;
@@ -112,6 +155,7 @@ figure {
 .list-text {
 	padding-left: 176px;
 }
+.home-date,
 .list-date,
 .mosaic-date,
 .featured-date {
@@ -127,6 +171,10 @@ figure {
 .space-tab-inactive {
 	color: #999;
 }
+.space-tab-inactive:hover::after {
+	content: "Próximamente";
+}
+.home-block-tit,
 .space-tab  {
 	text-transform: uppercase;
 	font-size: 24px;
