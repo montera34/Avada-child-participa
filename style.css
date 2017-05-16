@@ -30,6 +30,23 @@ figure {
 	padding: 0 5px 5px 0;
 }
 
+/* AVADA STYLES REDEFINITION */
+.fusion-page-title-bar h1 {text-transform: uppercase}
+.fusion-page-title-bar h3 {font-weight: bold;}
+.fusion-main-menu > ul > li > a,
+.fusion-secondary-menu > ul > li > a {text-transform: uppercase;}
+.fusion-copyright-notice a,
+.fusion-footer-widget-area a {text-decoration: underline;}
+.fusion-copyright-notice a:hover,
+.fusion-footer-widget-area a:hover {color: #fff !important; text-decoration: none;}
+
+/* HEADER MENUS */
+.fusion-secondary-menu .current_page_item a,
+.fusion-secondary-menu a:hover,
+.single-news .menu-item-news a {
+	color: #42b5a6 !important;
+}
+
 /* FULL PAGE TEMPLATE */
 .fp-tableCell {
 	vertical-align: bottom;
