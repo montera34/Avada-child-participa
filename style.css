@@ -21,13 +21,18 @@ Text Domain: ppamplona
 figure {
 	margin: 0 0 1em 0;
 }
-.list-inline {
+.list-inline,
+.list-inline-extra {
 	margin: 0;
 	padding: 0;
 }
 .list-inline > li {
 	display: inline-block;
 	padding: 0 5px 5px 0;
+}
+.list-inline-extra > li {
+	display: inline-block;
+	padding: 0 15px 5px 0;
 }
 .pparticipa-tooltip:hover::after {
 	background-color: #ff0;
@@ -45,13 +50,19 @@ figure {
 .fusion-footer-widget-area a {text-decoration: underline;}
 .fusion-copyright-notice a:hover,
 .fusion-footer-widget-area a:hover {color: #fff !important; text-decoration: none;}
+.fusion-footer-widget-area ul li a { border-bottom: none; }
 
-/* HEADER MENUS */
+/* HEADER */
 .fusion-secondary-menu .current_page_item a,
 .fusion-secondary-menu a:hover,
 .single-news .menu-item-news a {
 	color: #42b5a6 !important;
 }
+
+/* FOOTER */
+.fusion-footer .menu-util-container {text-align: right; }
+.fusion-footer .menu > li { display: inline-block; padding: 0 0 5px 15px; }
+.fusion-footer .menu a { padding: 0; }
 
 /* FULL PAGE TEMPLATE */
 .fp-tableCell {
@@ -257,3 +268,7 @@ figure {
 .filter-active {
 	background-color: #42b5a6 !important;
 }
+
+/* COOKIES NOTICE PLUGIN */
+.cookie-notice-container .button { padding: 2px 5px; background-color: #fff; }
+.cookie-notice-container .button:hover { background-color: rgba(255,255,255,0.5); }
