@@ -1,4 +1,5 @@
 <?php
+
 // theme setup main function
 add_action( 'after_setup_theme', 'pparticipa_theme_setup' );
 function pparticipa_theme_setup() {
@@ -22,6 +23,8 @@ function pparticipa_theme_setup() {
 	update_option('large_size_w', 1200);
 	update_option('large_size_h', 0);
 
+	$lang = get_stylesheet_directory() . '/languages';
+	load_child_theme_textdomain( 'pparticipa', $lang );
 }
 
 function pparticipa_custom_sizes( $sizes ) {
@@ -36,6 +39,8 @@ function pparticipa_custom_sizes( $sizes ) {
  * Enqueue scripts and styles.
  */
 function pparticipa_scripts() {
+
+	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'avada-stylesheet' ) );
 
 	if ( is_page_template('page-fullpage.php') ) wp_enqueue_style( 'fullpage-css', get_stylesheet_directory_uri().'/fullpagejs/jquery.fullPage.css',null,'2.8.6' );
 	if ( is_page_template('page-fullpage.php') ) {

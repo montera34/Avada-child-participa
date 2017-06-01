@@ -8,7 +8,7 @@ Version: 0.1
 Text Domain: ppamplona
 */
 
-@import url("../Avada/style.css");
+/*@import url("../Avada/style.css");*/
 
 .hide-text {
 	text-indent: 100%;
@@ -51,6 +51,21 @@ figure {
 .fusion-copyright-notice a:hover,
 .fusion-footer-widget-area a:hover {color: #fff !important; text-decoration: none;}
 .fusion-footer-widget-area ul li a { border-bottom: none; }
+#main .post h2, #main .reading-box h2, #main h2, .ei-title h2, .fusion-modal h2, .fusion-title h2, .fusion-widget-area h2, .main-flex .slide-content h2, .post-content h2, .title h2 { line-height: 1.1 !important; font-weight: 300; text-transform: uppercase; }
+
+/* EVENTS */
+.tribe-events-calendar td.tribe-events-past div[id*="tribe-events-daynum-"] { color: #333 !important; }
+.tribe-events-calendar div[id*="tribe-events-daynum-"] a { color: #42b5a6 !important; }
+.fusion-events-featured-image .fusion-events-single-title-content { top: 0; bottom: auto; }
+
+/* SINGLE EVENT */
+.sidebar .tribe-events-meta-group { margin: 0 0 20px; }
+.single-tribe_events .sidebar .tribe-events-single-section-title { padding: 0 !important; text-transform: uppercase; margin: 0 0 10px; }
+.sidebar .tribe-events-meta-group dd { margin-bottom: 0; }
+#tribe-events .tribe-events-button { background-color: transparent; }
+.single-tribe_events .tribe-events-cal-links { text-align: right; }
+be-events .tribe-events-button { padding: 2px 5px; color: #42b5a6; margin-left: 20px; }
+#tribe-events .tribe-events-button:hover { background-color: #42b5a6; }
 
 /* HEADER */
 .fusion-secondary-menu .current_page_item a,
@@ -61,7 +76,8 @@ figure {
 
 /* FOOTER */
 .fusion-footer .menu-util-container {text-align: right; }
-.fusion-footer .menu > li { display: inline-block; padding: 0 0 5px 15px; }
+.fusion-footer .menu > li { display: inline-block; padding: 0 0 5px 15px; border: none; }
+.fusion-footer-widget-area .widget_nav_menu li a::before { content: none; }
 .fusion-footer .menu a { padding: 0; }
 
 /* FULL PAGE TEMPLATE */
@@ -153,9 +169,9 @@ figure {
 .list-tit {
 	font-size: 18px;
 }
+.featured-img,
 .home-img,
-.mosaic-img,
-.featured-img {
+.mosaic-img {
 	max-height: 200px;
 	overflow: hidden;
 }
@@ -181,6 +197,7 @@ figure {
 }
 .space-tab-inactive {
 	color: #999;
+	line-height: 1.1;
 }
 .space-tab-inactive:hover::after {
 	content: "Próximamente";

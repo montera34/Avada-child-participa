@@ -6,7 +6,7 @@
 get_header();
 
 $args = array(
-	'post_type' => 'new'
+	'post_type' => 'news'
 );
 $news = new WP_Query($args);
 //if ( have_posts() ) :
