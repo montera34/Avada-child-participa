@@ -13,45 +13,10 @@ $args = array(
 );
 $items = new WP_Query($args);
 if ( $items->have_posts() ) :
-	// FILTERS
-	$filters_out = '';
-	$filters = array(
-		'type' => array(
-			'name' => 'Tipos',
-			'cols' => '2'
-		),
-		'area' => array(
-			'name' => 'Áreas',
-			'cols' => '6'
-		),
-		'neighbourhood' => array(
-			'name' => 'Barrios',
-			'cols' => '4'
-		)
-	);
-	foreach ( $filters as $f => $d ) {
-		$args = array(
-			'taxonomy' => $f
-		);
-		$termes = get_terms($args); print_r($terms);
-		if ( !is_wp_error($termes) ) {
-			$terms_out = '<div class="col-md-'.$d['cols'].'"><div class="space-filter-tit">'.$d['name'].'</div><ul class="space-filter space-filter-'.$f.' list-inline"><li><a data-filter="*" href="#">Todos</a></li>';
-			foreach ( $termes as $t ) {
-				if ( $f == 'type') {
-					$term_color = get_term_meta($t->term_id,"_participa_type_color",true);
-					$term_style = ' style="background-color: '.$term_color.'"';
-				} else { $term_style = ''; }
-				$terms_out .= '<li><a '.$term_style.' data-filter=".'.$t->slug.'" href="#">'.$t->name.'</a></li>';
-				
-			}
-			$terms_out .= '</ul></div>';
-			$filters_out .= $terms_out;
-		}
-	}
-	if ( $filters_out != '' ) $filters_out = '<div class="row space-filters">'.$filters_out.'</div>';
-	// end FILTERS
+	include('spaces-filters.php'); // FILTERS
+
 	echo '<div class="container-fluid">
-		<header class="row space-tabs"><h2 class="col-md-2 space-tab space-tab-active">Estables</h2><div class="col-md-2 space-tab space-tab-inactive">Puntuales</div></header>
+		<header class="row space-tabs"><h2 class="col-md-2 space-tab space-tab-active">'.__('Permanent','pparticipa').'</h2><div class="col-md-2 space-tab space-tab-inactive">'.__('One-time','pparticipa').'</div></header>
 		'.$filters_out.'
 		<div class="space row">';
 	$count = 0;
