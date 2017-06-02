@@ -1,0 +1,68 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Participa Pamplona\n"
+"POT-Creation-Date: 2017-06-02 15:01+0100\n"
+"PO-Revision-Date: 2017-06-02 15:01+0100\n"
+"Last-Translator: Alfonso Sánchez Uzábal <skotperez@voragine.net>\n"
+"Language-Team: Montera34 <info@montera34.com>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.10\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../functions.php:32
+msgid "Micro"
+msgstr "Micro"
+
+#: ../functions.php:33
+msgid "Mini"
+msgstr "Mini"
+
+#: ../functions.php:34
+msgid "Small"
+msgstr "Pequeño"
+
+#: ../loop-spaces.php:25
+msgid "Neighbourhood forums"
+msgstr "Foros de barrio"
+
+#: ../page-home.php:20 ../page-home.php:36
+msgid "News"
+msgstr "Actualidad"
+
+#: ../page-home.php:55
+msgid "Permanent participation spaces"
+msgstr "Espacios estables de participación"
+
+#: ../page-home.php:55
+msgid "One-time participation spaces"
+msgstr "Espacios puntuales de participación"
+
+#: ../page-mosaic.php:19
+msgid "Permanent"
+msgstr "Estables"
+
+#: ../page-mosaic.php:19
+msgid "One-time"
+msgstr "Puntuales"
+
+#: ../spaces-filters.php:5
+msgid "Types"
+msgstr "Tipos"
+
+#: ../spaces-filters.php:9
+msgid "Areas"
+msgstr "Áreas"
+
+#: ../spaces-filters.php:13
+msgid "Neighbourhood"
+msgstr "Barrios"
+
+#: ../spaces-filters.php:23
+msgid "All"
+msgstr "Todos"
