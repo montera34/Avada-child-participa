@@ -22,7 +22,7 @@ if ( $neighbourhoods == false ) { $loop_neighbourhood_out = "";  } else {
 		//$t_perma = get_term_link($term);
 		$item_classes .= ' '.$t->slug;
 	}
-	$loop_neighbourhood_out = '<div class="space-terms space-neighbourhood">Foros de barrio</div>';
+	$loop_neighbourhood_out = '<div class="space-terms space-neighbourhood">'.__('Neighbourhood forums','pparticipa').'</div>';
 }
 $areas = get_the_terms($post->ID,'area');
 if ( $areas == false ) { $loop_area_out = "";  } else {

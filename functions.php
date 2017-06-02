@@ -23,8 +23,8 @@ function pparticipa_theme_setup() {
 	update_option('large_size_w', 1200);
 	update_option('large_size_h', 0);
 
-	$lang = get_stylesheet_directory() . '/languages';
-	load_child_theme_textdomain( 'pparticipa', $lang );
+//	load_theme_textdomain( 'Avada', get_stylesheet_directory() . '/languages' );
+	load_child_theme_textdomain( 'pparticipa', get_stylesheet_directory() . '/languages' );
 }
 
 function pparticipa_custom_sizes( $sizes ) {
