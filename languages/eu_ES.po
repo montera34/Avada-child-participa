@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Participa Pamplona\n"
 "POT-Creation-Date: 2017-06-02 15:06+0100\n"
-"PO-Revision-Date: 2017-06-02 15:07+0100\n"
+"PO-Revision-Date: 2017-06-04 13:05+0200\n"
 "Last-Translator: Alfonso Sánchez Uzábal <skotperez@voragine.net>\n"
 "Language-Team: Montera34 <info@montera34.com>\n"
 "Language: eu_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 2.0.2\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: __;_e\n"
@@ -17,52 +17,52 @@ msgstr ""
 
 #: ../functions.php:32
 msgid "Micro"
-msgstr ""
+msgstr "Mikro"
 
 #: ../functions.php:33
 msgid "Mini"
-msgstr ""
+msgstr "Mini"
 
 #: ../functions.php:34
 msgid "Small"
-msgstr ""
+msgstr "Txikia"
 
 #: ../loop-spaces.php:25
 msgid "Neighbourhood forums"
-msgstr ""
+msgstr "Auzo-Eztabaidaguneak"
 
 #: ../page-home.php:20 ../page-home.php:36
 msgid "News"
-msgstr ""
+msgstr "Albisteak"
 
 #: ../page-home.php:55
 msgid "Permanent participation spaces"
-msgstr ""
+msgstr "Partaidetza espazio permanentea"
 
 #: ../page-home.php:55
 msgid "One-time participation spaces"
-msgstr ""
+msgstr "Partaidetza espazio puntuala"
 
 #: ../page-mosaic.php:19
 msgid "Permanent"
-msgstr ""
+msgstr "Permanentea"
 
 #: ../page-mosaic.php:19
 msgid "One-time"
-msgstr ""
+msgstr "Puntuala"
 
 #: ../spaces-filters.php:5
 msgid "Types"
-msgstr ""
+msgstr "Mota"
 
 #: ../spaces-filters.php:9
 msgid "Areas"
-msgstr ""
+msgstr "Alorra"
 
 #: ../spaces-filters.php:13
 msgid "Neighbourhood"
-msgstr ""
+msgstr "Auzoa"
 
 #: ../spaces-filters.php:23
 msgid "All"
-msgstr ""
+msgstr "Guztia"
