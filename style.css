@@ -52,6 +52,8 @@ figure {
 .fusion-footer-widget-area a:hover {color: #fff !important; text-decoration: none;}
 .fusion-footer-widget-area ul li a { border-bottom: none; }
 #main .post h2, #main .reading-box h2, #main h2, .ei-title h2, .fusion-modal h2, .fusion-title h2, .fusion-widget-area h2, .main-flex .slide-content h2, .post-content h2, .title h2 { line-height: 1.1 !important; font-weight: 300; text-transform: uppercase; }
+#main #comment-submit, #main .comment-submit, #reviews input#submit, #tribe-bar-form .tribe-bar-submit input[type="submit"], #tribe-events .tribe-events-button, #tribe-events .tribe-events-tickets .add-to-cart .button, #tribe_events_filter_control #tribe_events_filters_reset, #tribe_events_filter_control #tribe_events_filters_toggle, .button-default, .button.default, .comment-form input[type="submit"], .fusion-button-default, .fusion-portfolio-one .fusion-button, .post-password-form input[type="submit"], .ticket-selector-submit-btn[type="submit"], .tml-submit-wrap input[type="submit"], .wpcf7-form input[type="submit"], .wpcf7-submit, input.button-default { background-color: #fff !important; border: 1px solid #42b5a6 !important; color: #42b5a6 !important; }
+#main #comment-submit:hover, #main .comment-submit:hover, #reviews input#submit:hover, #tribe-bar-form .tribe-bar-submit input[type="submit"]:hover, #tribe-events .tribe-events-button:hover, #tribe-events .tribe-events-tickets .add-to-cart .button:hover, #tribe_events_filter_control #tribe_events_filters_reset:hover, #tribe_events_filter_control #tribe_events_filters_toggle:hover, .button-default:hover, .button.default:hover, .comment-form input[type="submit"]:hover, .fusion-button-default:hover, .fusion-portfolio-one .fusion-button:hover, .post-password-form input[type="submit"]:hover, .ticket-selector-submit-btn[type="submit"]:hover, .tml-submit-wrap input[type="submit"]:hover, .wpcf7-form input[type="submit"]:hover, .wpcf7-submit:hover, input.button-default:hover { background-color: #42b5a6 !important; color: #fff !important; }
 
 /* EVENTS */
 .tribe-events-calendar div[id*="tribe-events-daynum-"],
@@ -128,6 +130,7 @@ be-events .tribe-events-button { padding: 2px 5px; color: #42b5a6; margin-left: 
 }
 .home .fusion-button {
 	background-color: rgba(66,181,166,0.5) !important;
+	border: none !important;
 }
 .home .fusion-button:hover {
 	background-color: #42b5a6 !important;
@@ -136,6 +139,11 @@ be-events .tribe-events-button { padding: 2px 5px; color: #42b5a6; margin-left: 
 /* NEWSLETTER SUSCRIPTION FORM */
 .tnp-submit {
 	width: 100% !important;
+}
+
+/* CONTACT FORMS */
+.wpcf7-form p {
+	margin-bottom: 40px;
 }
 
 /* LIST OF ITEMS TEMPLATE */
