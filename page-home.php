@@ -37,6 +37,10 @@ if ( $news->have_posts() ) :
 		</div></div></div>';
 endif;
 
+// WIDGET BAR
+////
+if ( is_active_sidebar( 'home-widgets' ) )
+	dynamic_sidebar( 'home-widgets' );
 
 // SPACES
 //// 

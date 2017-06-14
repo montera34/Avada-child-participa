@@ -4,7 +4,7 @@
 add_action( 'after_setup_theme', 'pparticipa_theme_setup' );
 function pparticipa_theme_setup() {
 
-	/* Set up media options: sizes, featured images... */
+	// Set up media options: sizes, featured images...
 	add_filter( 'image_size_names_choose', 'pparticipa_custom_sizes' );
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 1200, 0 ); // default Post Thumbnail dimensions
@@ -14,7 +14,7 @@ function pparticipa_theme_setup() {
 	add_image_size( 'mini', '362', '0', false );
 	add_image_size( 'small', '558', '0', false );
 
-	/* set up image sizes*/
+	// set up image sizes
 	update_option('thumbnail_size_w', 1200);
 	update_option('thumbnail_size_h', 0);
 	update_option('thumbnail_crop', 0);
@@ -23,8 +23,11 @@ function pparticipa_theme_setup() {
 	update_option('large_size_w', 1200);
 	update_option('large_size_h', 0);
 
-//	load_theme_textdomain( 'Avada', get_stylesheet_directory() . '/languages' );
+	// load child theme textdomain
 	load_child_theme_textdomain( 'pparticipa', get_stylesheet_directory() . '/languages' );
+
+	// Register Widget Areas
+	add_action( 'widgets_init', 'pparticipa_widgets_init' );
 }
 
 function pparticipa_custom_sizes( $sizes ) {
@@ -57,4 +60,21 @@ add_action( 'wp_enqueue_scripts', 'pparticipa_scripts' );
 function pparticipa_custom_excerpt($limit) {
 	return wp_trim_words(get_the_excerpt(), $limit);
 }
+
+/**
+ * Register Widget Areas
+ */
+function pparticipa_widgets_init() {
+	// Home page Sidebar
+	register_sidebar( array(
+		'name'          => __( 'Home page widget area', 'pparticipa' ),
+		'id'            => 'home-widgets',
+		'description'   => '',
+		'before_widget' => '<div id="%1$s" class="container-fluid home-block home-widget %2$s"><div class="row"><div class="col-md-12">',
+		'after_widget'  => '</div></div></div>',
+		'before_title'  => '<h2 class="home-block-tit home-widget-tit">',
+		'after_title'   => '</h2>',
+	) );
+}
+
 ?>
