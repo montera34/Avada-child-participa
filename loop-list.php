@@ -13,10 +13,18 @@ if ( $loop == 'list' ) {
 	$img_size = 'medium';
 	$excerpt_words = 60;
 	$item_classes = 'featured-item col-md-12';
-} elseif ( $loop == 'home' ) {
+} elseif ( $loop == 'home-3' ) {
 	$img_size = 'small';
 	$excerpt_words = 15;
 	$item_classes = 'home-item col-md-4';
+} elseif ( $loop == 'home-4' ) {
+	$img_size = 'small';
+	$excerpt_words = 15;
+	$item_classes = 'home-item col-md-3';
+} elseif ( $loop == 'home-2' ) {
+	$img_size = 'small';
+	$excerpt_words = 15;
+	$item_classes = 'home-item col-md-6';
 }
 
 

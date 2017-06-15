@@ -156,7 +156,10 @@ be-events .tribe-events-button { padding: 2px 5px; color: #42b5a6; margin-left: 
 	margin: 10px 0;
 }
 .home-item:hover,
-.home-item:hover .home-tit,
+.home-item:hover .home-2-tit,
+.home-item:hover .home-3-tit,
+.home-item:hover .home-4-tit,
+.home-item:hover .event-meta,
 .featured-item:hover,
 .featured-item:hover .featured-tit,
 .mosaic-item:hover,
@@ -166,7 +169,9 @@ be-events .tribe-events-button { padding: 2px 5px; color: #42b5a6; margin-left: 
 	background-color: rgba(66,181,166,1);
 	color: #fff;
 }
-.home-tit,
+.home-2-tit,
+.home-3-tit,
+.home-4-tit,
 .list-tit,
 .mosaic-tit,
 .featured-tit {
@@ -178,12 +183,19 @@ be-events .tribe-events-button { padding: 2px 5px; color: #42b5a6; margin-left: 
 .mosaic-tit {
 	font-size: 21px;
 }
-.home-tit,
+.home-2-tit,
+.home-3-tit,
+.home-4-tit,
 .list-tit {
 	font-size: 18px;
 }
+.home-4-tit {
+	font-weight: normal !important;
+}
 .featured-img,
-.home-img,
+.home-2-img,
+.home-3-img,
+.home-4-img,
 .mosaic-img {
 	max-height: 200px;
 	overflow: hidden;
@@ -195,11 +207,30 @@ be-events .tribe-events-button { padding: 2px 5px; color: #42b5a6; margin-left: 
 .list-text {
 	padding-left: 176px;
 }
-.home-date,
+.home-2-date,
+.home-3-date,
+.home-4-date,
 .list-date,
 .mosaic-date,
 .featured-date {
 	font-weight: bold;
+}
+.home-4-meta {
+	font-size: 0.9em;
+	color: #42b5a6;
+}
+.event-meta {
+	margin-bottom: 5px;
+}
+.event-meta > i {
+	float: left;
+	line-height: 1.25;
+}
+.event-meta .tribe-address,
+.event-meta .tribe-date,
+.event-meta .tribe-organizer {
+	display: block;
+	margin-left: 20px;
 }
 
 /* MOSAIC OF SPACES TEMPLATE */
